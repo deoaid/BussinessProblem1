@@ -18,10 +18,10 @@ newtab = Button(root, text="New Tab", background='white')
 
 
 # Place widgets in window (with pack function!)
-title.grid(row=0, collumn=0)
-file.grid(row=1, collumn=0)
-save.grid(row=2, collumn=0)
-newtab.grid(row=3, collumn=0)
+title.grid(row=0, column=0)
+file.grid(row=1, column=0)
+save.grid(row=2, column=0)
+newtab.grid(row=3, column=0)
 
 
 
