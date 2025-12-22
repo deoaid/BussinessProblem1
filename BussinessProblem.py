@@ -24,7 +24,7 @@ file.grid(row=0, column=1)
 options.grid(row=1, column=1)
 save.grid(row=0, column=2)
 newtab.grid(row=0, column=3)
-text.grid(row=1, column=0)
+text.grid(row=2, column=0)
 
 
 
