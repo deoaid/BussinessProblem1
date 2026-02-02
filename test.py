@@ -1,10 +1,15 @@
 from tkinter import *
 from tkmacosx import Button
 
+
+with open("text.txt", "r") as File:
+	textsave = File.read()
+
+
 root = Tk()
 
-
-root.title("Creating FIle")
+print(textsave)
+root.title("Creating File")
 root.geometry("500x500")
 
 
@@ -14,7 +19,10 @@ def save():
 	with open("text.txt", "w") as File:
 		File.write(textbox.get("1.0", END))
 
-button = Button(text="text", command=save)
+textbox.insert(END, textsave)
+
+
+button = Button(text="Save", command=save)
 
 textbox.pack()
 
